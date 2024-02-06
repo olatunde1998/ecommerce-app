@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="bg-[#15161D] p-4 text-white w-full text-center opacity-95">
-        copyright 2023 All right Reserved | This template is made by geodevcodes
+        copyright 2024 All right Reserved | This template is made by geodevcodes
       </p>
     </>
   );
