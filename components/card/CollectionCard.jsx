@@ -1,28 +1,26 @@
-import React from 'react'
-import Image from 'next/image';
+import Image from "next/image";
+import React from "react";
 
 const CollectionCard = () => {
   return (
-    <div className='relative mt-[50px] max-w-[250px] mx-auto '>
-        <div className='bg-gray-200 max-w-[250px]'>
-            <Image src="/images/laptop.png" alt="laptop" width={300} height={5} loading="lazy" className=''/>
+    <>
+      <div className="relative  w-[300px] h-[250px] bg-[#f7f5f5] flex items-center md:w-[300px]  ml-5">
+        <div className="relative left-[-20px] w-full lg:w-[300px] h-[250px]">
+          <Image src="/images/laptop.png" alt="laptop pics" fill />
+          <Image src="/images/card-shape.png" alt="laptop pics" fill />
         </div>
-        <div className='absolute inset-0 bg-red-600 bg-opacity-50 w-[250px] h-full  border-t-[310px] border-l-[10px] border-r-[170px]  border-t-transparent border-l-transparent mt-[1px]    '>
-            <div className='w-[250px] mt-[-270px] ml-[20px] text-white text-xs text-left'>
-                <p className='font-thin'>Laptop </p>
-                <p className='mb-1'>Collection</p>
-                <p>SHOP NOW</p>
-            </div> 
-            
+        <div className="absolute top-4 text-white">
+          <p className="text-2xl font-extrabold">
+            Laptop <br />
+            Collection
+          </p>
+          <p className="text-xs font-semibold uppercase mt-2">
+            Shop now <span></span>
+          </p>
         </div>
-    </div>
-    
-    
-  
-  
-  
+      </div>
+    </>
+  );
+};
 
-  )
-}
-
-export default CollectionCard
+export default CollectionCard;
