@@ -6,9 +6,9 @@ import * as yup from "yup";
 const passwordRules = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$!%*?&])[A-Za-z\d@#$!%*?&]{8,}$/;
 
 export const basicSchema = yup.object().shape({
-    // fullName: yup.string().max(25, "Your full name must not be more than 25 characters or less").required("Required"),
+    fullName: yup.string().max(25, "Your full name must not be more than 25 characters or less").required("Required"),
     email: yup.string().email("please, enter a valid email").required("Required"),
     password: yup.string().min(8).matches(passwordRules, {message: "must contain atleast one uppercase letter, one lowercase letter, one number and 1 special character"}).required("Required"),
-    country: yup.string().min(3, "country name must be greater than 3 characters or more").required("Required"),
-    state: yup.string().min(2, "state name must be greater than 2 characters or more").required("Required")
+    // country: yup.string().min(3, "country name must be greater than 3 characters or more").required("Required"),
+    // state: yup.string().min(2, "state name must be greater than 2 characters or more").required("Required")
  })
