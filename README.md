@@ -39,4 +39,4 @@ Vercel was used to deploy the app.
 The MIT License - Copyright (c) 2023 - Present, geodevcodes/  Storage Service.
 
 # Author
-Rasheed Olatunde (Full Stack Developer) || Aminat Erujeje (Frontend Developer)
+Rasheed Olatunde (Full Stack Developer) || Aminat Olatunji (Frontend Developer)
