@@ -95,14 +95,15 @@ const SignIn = () => {
             {touched.password && errors.password ? (
               <p className="text-red-500 text-xs pb-5">{errors.password}</p>
             ) : null}
+              <div className="absolute text-2xl right-1 md:right-20 top-1/2 lg:left-72 ">
+              {open === false ? (
+                <AiFillEyeInvisible onClick={toggle} />
+              ) : (
+                <AiFillEye onClick={toggle} />
+              )}
+            </div>
           </div>
-          <div className="absolute text-2xl right-12 ">
-            {open === false ? (
-              <AiFillEyeInvisible onClick={toggle} />
-            ) : (
-              <AiFillEye onClick={toggle} />
-            )}
-          </div>
+          
           <div className="mb-7 text-gray-500 flex justify-start items-center">
             <input
               type="checkbox"
