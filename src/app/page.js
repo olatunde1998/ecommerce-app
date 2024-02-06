@@ -1,4 +1,4 @@
-import CollectionCardTwo from "@/card/CollectionCardTwo";
+import CollectionCard from "@/card/CollectionCard";
 import ProductCard from "@/card/ProductCard";
 import Footer from "@/footer/Footer";
 import Newsletter from "@/newsletter/Newsletter";
@@ -25,9 +25,9 @@ export default function Home() {
       </section>
       {/* <CollectionCard /> */}
       <div className="flex flex-col md:flex-row max-w-[1150px] justify-between items-center mx-auto pb-20">
-        <CollectionCardTwo />
-        <CollectionCardTwo />
-        <CollectionCardTwo />
+        <CollectionCard />
+        <CollectionCard />
+        <CollectionCard />
       </div>
       <div>
         <section className="border-b-[1.3px] border-slate-300 mb-10">
