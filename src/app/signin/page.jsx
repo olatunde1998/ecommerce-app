@@ -93,7 +93,7 @@ const SignIn = () => {
               className="block border border-grey-500 rounded-lg focus:outline-none  focus:ring-1 focus:ring-red-400 pl-3 py-2 mb-5 w-56 text-xs md:py-3 lg:w-80 lg:py-4"
             />
             {touched.password && errors.password ? (
-              <p className="text-red-500 text-xs pb-5">{errors.password}</p>
+              <p className="text-red-500 text-[3px] pb-5">{errors.password}</p>
             ) : null}
               <div className="absolute text-2xl right-1 md:right-20 top-1/2 lg:left-72 ">
               {open === false ? (
